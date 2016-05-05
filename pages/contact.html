@@ -1,0 +1,26 @@
+<div class="jumbotron text-center">
+    <h1>Contact Page</h1>
+
+    <p>{{ message }}</p>
+</div>
+
+<div class="container">
+  <div class="col-md-8 col-md-offset-2">
+    <form action="//formspree.io/raney24fcb@gmail.com"
+          method="POST" id="form-spree">          
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <input type="email" name="_replyto" placeholder="Email address" class="form-control input-lg">
+            </div> 
+            <div class="form-group">
+              <textarea type="text" name="problem" placeholder="How can we help?" class="form-control input-lg large-box"></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Mancard | Contact Us form submission"/>
+            <input type="text" name="_gotcha" style="display:none"/> 
+            <button type="submit" class="btn btn-default form-btn" style="float: right">Submit</button> 
+            <p class="form-complete" style="display:none">Thank you for your submission.  <a href="/">Refresh</a> the page to resubmit</p>
+    </form>
+  </div>
+</div>

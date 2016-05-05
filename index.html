@@ -1,0 +1,57 @@
+<html>
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="assets/css/animations.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/modernizr.custom.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/animate.js"></script>
+    </head>
+    <body ng-app="mancardApp" ng-controller="mainController">
+
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar clearfix">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Holepunch Mancards</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="page-click"> Home</a></li>
+                    <li><a href="#about" class="page-click"> About</a></li>
+                    <li><a href="#contact" class="page-click"> Contact</a></li>
+                </ul>
+
+            </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main" class="pt-perspective">
+
+          <div ng-view class="page {{pageClass}}"></div>
+
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+
+        </div>
+
+      <!-- <div class="footer">
+        <span class="right-align">Built by some nitty gritty men</span>
+        <span class="left-align"><a href="#contact">Contact us</a></span>
+      </div> -->
+
+    </body>
+    
+</html> 
