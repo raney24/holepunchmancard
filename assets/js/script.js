@@ -7,6 +7,11 @@ mancardApp.config(function($routeProvider) {
 			controller : 'mainController'
 		})
 
+		.when('/buynow', {
+			templateUrl : 'pages/buynow.html',
+			controller : 'buynowController'
+		})
+
 		.when('/about', {
 			templateUrl : 'pages/about.html',
 			controller : 'aboutController'
@@ -22,6 +27,13 @@ mancardApp.controller('mainController', function($scope) {
 
 	$scope.message = 'Providing men what they have needed: A MANCARD';
 	$scope.pageClass = 'page-home';
+
+});
+
+mancardApp.controller('buynowController', function($scope) {
+
+	$scope.message = 'These cards show your true manhood';
+	$scope.pageClass = 'page-buynow';
 
 });
 

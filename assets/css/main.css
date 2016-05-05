@@ -4,7 +4,7 @@
     top:50;  
     width:100%; 
     letter-spacing: 2px;
-    min-height: 700px;
+    min-height: 1200px;
 
 }
 
@@ -128,6 +128,10 @@ a.btn:hover {
 // 	animation: slideOutLeft 0.5s both ease-in; 
 
 // }
+
+/* buynow ------------------------ */
+.page-buynow.ng-enter        { animation: slideInRight 0.5s both ease-in; }
+.page-buynow.ng-leave        { animation: slideOutLeft 0.5s both ease-in; }
 
 /* about ------------------------ */
 .page-about.ng-enter        { animation: slideInRight 0.5s both ease-in; }
