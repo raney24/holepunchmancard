@@ -31,6 +31,11 @@ mancardApp.config(function($routeProvider) {
 			templateUrl : 'pages/thanks.html',
 			controller : 'thanksController'
 		})
+
+		.when('/signup', {
+			templateUrl : 'pages/signup.html',
+			controller : 'signupController'
+		})
 })
 
 mancardApp.controller('mainController', function($scope) {
@@ -72,5 +77,12 @@ mancardApp.controller('thanksController', function($scope) {
 
 	$scope.message = 'We will be contacting you for your order details';
 	$scope.pageClass= 'page-thanks';
+
+});
+
+mancardApp.controller('signupController', function($scope) {
+
+	$scope.message = 'Signup to receive updates about mancards and all other manly things';
+	$scope.pageClass= 'page-signup';
 
 });
