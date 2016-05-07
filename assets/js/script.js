@@ -36,6 +36,11 @@ mancardApp.config(function($routeProvider) {
 			templateUrl : 'pages/signup.html',
 			controller : 'signupController'
 		})
+
+		.when('/form', {
+			templateUrl : 'pages/form.html',
+			controller : 'formController'
+		})
 })
 
 mancardApp.controller('mainController', function($scope) {
@@ -84,5 +89,12 @@ mancardApp.controller('signupController', function($scope) {
 
 	$scope.message = 'Signup to receive updates about mancards and all other manly things';
 	$scope.pageClass= 'page-signup';
+
+});
+
+mancardApp.controller('formController', function($scope) {
+
+	$scope.message = 'Fill out this form to receive your mancard';
+	$scope.pageClass= 'page-form';
 
 });
