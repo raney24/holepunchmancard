@@ -70,7 +70,7 @@ mancardApp.controller('contactController', function($scope) {
 
 mancardApp.controller('thanksController', function($scope) {
 
-	$scope.message = 'We will be contacting you for your order details!';
+	$scope.message = 'We will be contacting you for your order details';
 	$scope.pageClass= 'page-thanks';
 
 });
