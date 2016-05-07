@@ -12,6 +12,11 @@ mancardApp.config(function($routeProvider) {
 			controller : 'buynowController'
 		})
 
+		.when('/discount', {
+			templateUrl : 'pages/discount.html',
+			controller : 'discountController'
+		})
+
 		.when('/about', {
 			templateUrl : 'pages/about.html',
 			controller : 'aboutController'
@@ -20,6 +25,11 @@ mancardApp.config(function($routeProvider) {
 		.when('/contact', {
 			templateUrl : 'pages/contact.html',
 			controller : 'contactController'
+		})
+
+		.when('/thanks', {
+			templateUrl : 'pages/thanks.html',
+			controller : 'thanksController'
 		})
 })
 
@@ -37,6 +47,13 @@ mancardApp.controller('buynowController', function($scope) {
 
 });
 
+mancardApp.controller('discountController', function($scope) {
+
+	$scope.message = 'Thank your manly friend who you referred you';
+	$scope.pageClass = 'page-discount';
+
+});
+
 mancardApp.controller('aboutController', function($scope) {
 
 	$scope.message = 'Learn more about how this proves and disproves your manhood';
@@ -47,6 +64,13 @@ mancardApp.controller('aboutController', function($scope) {
 mancardApp.controller('contactController', function($scope) {
 
 	$scope.message = 'Email us if you have questions or suggestions';
+	$scope.pageClass= 'page-contact';
+
+});
+
+mancardApp.controller('thanksController', function($scope) {
+
+	$scope.message = 'Thanks for purchasing your manhood!';
 	$scope.pageClass= 'page-contact';
 
 });
