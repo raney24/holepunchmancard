@@ -41,6 +41,11 @@ mancardApp.config(function($routeProvider) {
 			templateUrl : 'pages/form.html',
 			controller : 'formController'
 		})
+
+		.when('/sheets', {
+			templateUrl : 'pages/sheets.html',
+			controller : 'sheetsController'
+		})
 })
 
 mancardApp.controller('mainController', function($scope) {
@@ -96,5 +101,12 @@ mancardApp.controller('formController', function($scope) {
 
 	$scope.message = 'Fill out this form to receive your mancard';
 	$scope.pageClass= 'page-form';
+
+});
+
+mancardApp.controller('sheetsController', function($scope) {
+
+	$scope.message = 'test with sheets';
+	$scope.pageClass= 'page-sheets';
 
 });

@@ -8,6 +8,30 @@
 
 }
 
+#offenses table {
+	color: white;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+table th {
+	font-size: 18px;
+	padding: 12px 20px;
+	border-left: none;
+	border-right: none;
+}
+
+table td {
+	padding: 12px 20px;
+	border: 1px solid black;
+}
+table th:first-child {
+	width: 30%;
+}
+table td {
+	padding-top: 12px; 
+}
+
 nav {
 	// z-index: 9999;
 	background: #5D6472;
